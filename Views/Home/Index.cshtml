@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject bilanguage.resources.LocService SL
+@inject IViewLocalizer localizer
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>@SL.Loc("qumc")</h1>
+<div class="text-center">
+    <h1 class="display-4"></h1>
+    <a asp-action="index" asp-route-lang="en" class="btn btn-primary">en</a>
+    <br />
+    <a asp-action="index" asp-route-lang="ar" class="btn btn-primary">ar</a>
+
+</div>
